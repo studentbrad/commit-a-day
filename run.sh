@@ -6,9 +6,9 @@ git pull
 for i in {0..$commits}
 do
 	now=$(date)
-	"$now" >> date.txt
+	echo $now > date.txt
     git add .
     git commit -m "$now"
-    git push -u origin master
+    git push
     sleep 1
 done
