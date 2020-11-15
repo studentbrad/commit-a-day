@@ -8,5 +8,5 @@ crontab -u username -e
 ```
 To run once each day, append to the bottom:
 ```
-* 0 * * * cd <commit-a-day directory> && ./run.sh > run.log 2>&1
+0 0 * * * cd <commit-a-day directory> && ./run.sh > run.log 2>&1
 ```
