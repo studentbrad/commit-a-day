@@ -1,6 +1,5 @@
 #!/bin/bash
-commits_max=3
-commits=(1 + $RANDOM % $commits_max)
+commits=1
 git fetch
 git pull
 for i in {0..$commits}
