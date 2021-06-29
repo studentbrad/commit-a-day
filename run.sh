@@ -1,5 +1,8 @@
 #!/bin/bash
-commits=1
+LOWER=1
+UPPER=3
+DIFF=$(($UPPER - $LOWER + 1))
+COMMITS=$((RANDOM % $DIFF + $LOWER))
 git fetch
 git pull
 for i in {0..$commits}

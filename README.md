@@ -6,7 +6,7 @@ To set up crontab for a specific user run:
 ```
 crontab -u username -e
 ```
-To run once each day, append to the bottom:
+To run once each day at noon, append to the bottom:
 ```
-0 0 * * * cd <commit-a-day directory> && ./run.sh > run.log 2>&1
+12 0 * * * cd <commit-a-day directory> && ./run.sh >> run.log 2>&1
 ```
